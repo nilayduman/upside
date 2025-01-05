@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "UpsideDown",
+    "slug": "UpsideDown",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+      
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "scheme": "upsidedown",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.upsidedown.app",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "YOUR_IOS_CLIENT_ID"
+        }
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.upsidedown.app",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/icons/email.png"
+    },
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      "expo-apple-authentication"
+    ]
+  }
+}
